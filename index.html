@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Share+Tech+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title></title>
+</head>
+<body onload="startSlides()">
+<div class="titleNav" id="titleContainer">
+	<div class="titleNav" id="title"><span style="text-decoration: underline;color:orange;">Mars</span><br> The Next Frontier</div>
+	<div class="titleNav" id="navContainer">
+		<a href="pages/get_there.html"><div class="titleNav" id="navigation1">How we're getting there</div></a>
+		<a href="pages/stay_there.html"><div class="titleNav" id="navigation2">How we're staying there</div></a>
+	</div>
+</div>
+
+<div id="backgroundContainer">
+	<div class="slideShowFP" id="slideOne">
+		<div class="slideImage" id="imageOne"></div>
+		<div class="slideText" id="textOne"><p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, after Mercury. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the valleys, deserts, and polar ice caps of Earth.
+		As early as 2007, Elon Musk stated a personal goal of eventually enabling human exploration and settlement of Mars, although his personal public interest in Mars goes back at least to 2001.</p></div>
+	</div>
+	<div class="slideShowFP" id="slideTwo">
+		<div class="slideImage" id="imageTwo"></div>
+		<div class="slideText" id="textTwo"><p>Mars will pose hazards to the health of astronauts far beyond those encountered on any previous mission. Even the dust on Mars is more dangerous than that found on the moon. The thin atmosphere on Mars blocks much of the radiation from space, which means that a solar flare won't be as much of a concern there as on the moon, it blocks less radiation than Earth's atmosphere. But the distance between Earth and Mars means that if a crisis does arise, the astronauts will have to cope with it on their own.</p></div>
+	</div>
+	<div class="slideShowFP" id="slideThree">
+		<div class="slideImage" id="imageThree"></div>
+		<div class="slideText" id="textThree"><p>The International Space Station (ISS) is a space station, or a habitable artificial satellite, in low Earth orbit. Its first component launched into orbit in 1998, and the ISS is now the largest human-made body in low Earth orbit and can often be seen with the naked eye from Earth. The ISS will play an important role in the deployment and maintenance of the Interplanetary Transport System (ITS)</p></div>
+	</div>
+	<div class="slideShowFP" id="slideFour">
+		<div class="slideImage" id="imageFour"></div>
+		<div class="slideText" id="textFour"><p></p></div>
+	</div>
+	<div class="slideShowFP" id="slideFive">
+		<div class="slideImage" id="imageFive"></div>
+		<div class="slideText" id="textFive"><p>words</p></div>
+	</div>
+</div>
+
+<div id="slideShowControl">
+	<div class="button" onclick="prevSlide()" id="previous"></div>
+	<div class="button" id="pause" onclick="toggleShow()"></div>
+	<div class="button" onclick="nextSlide()" id="proceed"></div>
+</div>
+<script type="text/javascript" src="scripts/slideshow.js"></script>
+</body>
+</html>

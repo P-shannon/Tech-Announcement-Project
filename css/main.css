@@ -1,0 +1,145 @@
+body {
+	margin:0;
+	background:black;
+	color:white;
+	font-family: 'Share Tech Mono', monospace;
+	height:100vh;/*fill the damn page*/
+}
+div {
+	display:inline-flex;
+}
+img{
+	max-width:100%;max-height:100%;
+}
+a{
+	text-decoration: none;
+	color:inherit;
+	transition:0.2s;
+}
+a:hover{
+	text-shadow: 0 0 15px orange;
+	transition:0.5s;
+}
+#titleContainer{
+	display:block;
+	position:relative;
+	top:0;
+	left:0;
+	margin:0 auto;
+	background:rgba(0%,0%,0%,0.5);
+	display:flex;
+	flex-direction: column;
+	width:500px;height:180px;
+	z-index: 50;
+}
+.titleNav{
+	flex:1;
+}
+#title{
+	font-family: 'Bungee', cursive;
+	display:inline-block;
+	flex:3;
+	font-size: 45px;
+	line-height: 50px;
+	text-align:center;
+}
+#navigation1, #navigation2{
+	display:inline-block;
+	font-size: 23px;
+	margin:0;
+	line-height: 20px;
+	text-align:center;
+}
+#navigation1{
+	border-right: 2px solid white;
+}
+#backgroundContainer{
+	position:fixed;
+	top:0;left:0;
+	width:100vw;height:100vh;/*fill screen*/
+	z-index:-1;
+}
+.slideShowFP{
+	position:absolute;
+	top:0;left:0;
+	width:100%;height:100%;/*fill container*/
+	display:block;
+	flex-direction: column;
+	transition:0.5s;
+}
+.slideImage{
+	position:absolute;
+	top:0;
+	width:100%;height:100%;
+}
+#imageOne{
+	background:url("../images/slide1.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#imageTwo{
+	background:url("../images/slide2.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#imageThree{
+	background:url("../images/slide3.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#imageFour{
+	background:url("../images/slide4.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#imageFive{
+	background:url("../images/slide5.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.slideText{
+	position:absolute;
+	background:rgba(0,0,0,0.5);
+	bottom:5%;
+	font-size: 23px;
+	width:100%;height:20%;
+}
+.slideText p{
+	width:80%;
+	margin:0 10%;
+	text-align: justify;
+}
+#slideShowControl{
+	position:fixed;
+	bottom:0;
+	z-index: 1;
+	background:rgba(0,0,0,1);
+	width:100%;height:5%;
+}
+.button{
+	position:absolute;
+	bottom:0;
+	/*width:30px;height:30px;*/
+}
+#previous{
+	left:650px;
+	border-right: 30px solid orange;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+#proceed{
+	right:650px;
+	border-left: 30px solid orange;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+#pause{
+	width:30px;height:30px;
+	background:green;
+	left:705px;
+}
